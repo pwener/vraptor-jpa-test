@@ -11,7 +11,6 @@ public class JPAGeneratorProperties{
 	@ApplicationScoped
 	@Produces
 	public Map<String, String> getPropertiesOfJPAConnection() throws Exception {
-		System.out.println("Está entrando aqui!");
 		try {
 			String username = "root";
 		    String password = "root";
