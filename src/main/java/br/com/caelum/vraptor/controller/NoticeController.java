@@ -16,21 +16,22 @@ import br.com.caelum.vraptor.models.Notice;
 public class NoticeController {
 	private Result result;
 	private NoticeDAO noticeDAO;
-
+	
+	/**
+	 * @deprecated CDI eyes only
+	 */
+	@Deprecated
+	protected NoticeController() {
+		this(null, null);
+	}
+	
 	@Inject
 	public NoticeController(Result result, NoticeDAO noticeDAO) {
 		this.result = result;
 		this.noticeDAO = noticeDAO;
 	}
 
-	/**
-	 * @deprecated CDI eyes only
-	 */
-	protected NoticeController() {
-		this(null, null);
-	}
-
-	@Path("/")
+	@Get("/")
 	public void index() {
 	}
 

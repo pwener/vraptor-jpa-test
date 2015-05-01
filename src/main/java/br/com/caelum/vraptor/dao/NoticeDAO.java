@@ -21,6 +21,7 @@ public class NoticeDAO implements NoticeWorks, Serializable{
 	/**
 	 * @deprecated
 	 */
+	@Deprecated
 	public NoticeDAO() {
 		this(null);
 	}
