@@ -6,16 +6,15 @@
     http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">  
  <persistence-unit name="default">
        <properties>  
-            <!-- DADOS CONEXAO   
+            <!-- DADOS CONEXAO   --> 
             <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />  
             <property name="hibernate.connection.username" value="root" />  
             <property name="hibernate.connection.password" value="root" />  
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/vraptor_test" />  
             <property name="hibernate.default_schema" value="vraptor_test"/>  
-          	-->
             <!-- CONFIGURACAO -->  
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />  
-            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
             <property name="hibernate.show_sql" value="false" />  
             <property name="hibernate.format_sql" value="true" />  
             <property name="hibernate.archive.autodetection" value="class" />  
